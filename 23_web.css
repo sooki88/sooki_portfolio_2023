@@ -138,6 +138,7 @@ h2 {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    position: relative;
 }
 
 .img_w1::-webkit-scrollbar { /* 스크롤바 숨기기 */
@@ -147,6 +148,50 @@ h2 {
 .img_w1 img{
     width: 100%;
     float: left;
+}
+
+.noti {
+    position: absolute;
+    background-color: #F83B00;
+    border-radius: 4px;
+    box-shadow: 3px 4px 6px rgba(199, 47, 0, 0.3);
+    top: 12px;
+    left: 20px;
+    padding: 4px 12px 5px;
+    width: 113px;
+    animation: fadeout 8s; /* 사라지기 */
+    -webkit-animation: fadeout 10s; /* 사라지기 chrome */
+    animation-fill-mode: forwards; /* 사라지기 */
+}
+
+@keyframes fadeout { /* 사라지기 */
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes fadeout { /* 사라지기 */
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.noti img {
+    width: 9px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.noti p {
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 150%;
+    font-weight: 200;
 }
 
 .cothp2 {
@@ -236,19 +281,60 @@ h2 {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    position: relative;
 }
 
 .img_m1::-webkit-scrollbar { /* 스크롤바 숨기기 */
     display: none; /* Chrome, Safari, Opera*/
 }
 
-.img_m1 {
-    width: 174px;
-    position: relative;
-}
-
 .img_m1 img {
     width: 100%;
+    float: left;
+}
+
+.noti_m {
+    position: absolute;
+    background-color: #F83B00;
+    border-radius: 4px;
+    box-shadow: 3px 4px 6px rgba(199, 47, 0, 0.3);
+    top: 12px;
+    left: 20px;
+    padding: 4px 12px 5px;
+    width: 113px;
+    animation: fadeout 8s; /* 사라지기 */
+    -webkit-animation: fadeout 10s; /* 사라지기 chrome */
+    animation-fill-mode: forwards; /* 사라지기 */
+}
+
+@keyframes fadeout { /* 사라지기 */
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes fadeout { /* 사라지기 */
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.noti_m img {
+    width: 9px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.noti_m p {
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 150%;
+    font-weight: 200;
 }
 
 .cothm2-1 {
